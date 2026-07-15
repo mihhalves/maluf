@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Maluf Imóveis">
+  <rect width="512" height="512" fill="#2F3E46"/>
+  <rect x="58" y="58" width="396" height="396" fill="none" stroke="#B08D46" stroke-width="10"/>
+  <line x1="122" y1="140" x2="390" y2="140" stroke="#B08D46" stroke-width="8" stroke-linecap="round"/>
+  <line x1="122" y1="372" x2="390" y2="372" stroke="#B08D46" stroke-width="8" stroke-linecap="round"/>
+  <text x="256" y="344" text-anchor="middle" fill="#F0EDE3"
+        font-family="Georgia, 'Times New Roman', serif" font-size="256" font-weight="700">M</text>
+</svg>

@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contato | Maluf Imóveis</title>
+
+  <meta name="description" content="Entre em contato com a Maluf Imóveis. Tire suas dúvidas e receba atendimento personalizado.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#354F52">
+
+  <link rel="canonical" href="https://imoveismaluf.com.br/contato.html">
+
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contato | Maluf Imóveis">
+  <meta property="og:description" content="Entre em contato com a Maluf Imóveis. Tire suas dúvidas e receba atendimento personalizado.">
+  <meta property="og:url" content="https://imoveismaluf.com.br/contato.html">
+  <meta property="og:site_name" content="Maluf Imóveis">
+  <meta property="og:image" content="https://imoveismaluf.com.br/assets/img/hero.webp">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contato | Maluf Imóveis">
+  <meta name="twitter:description" content="Entre em contato com a Maluf Imóveis. Tire suas dúvidas e receba atendimento personalizado.">
+  <meta name="twitter:image" content="https://imoveismaluf.com.br/assets/img/hero.webp">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contato | Maluf Imóveis",
+    "url": "https://imoveismaluf.com.br/contato.html",
+    "description": "Entre em contato com a Maluf Imóveis. Tire suas dúvidas e receba atendimento personalizado.",
+    "mainEntity": {
+      "@type": "RealEstateAgent",
+      "name": "Maluf Imóveis",
+      "telephone": "+55 11 94102-0630",
+      "url": "https://imoveismaluf.com.br/"
+    }
+  }
+  </script>
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="any" type="image/x-icon">
+  <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/favicon-48x48.png" sizes="48x48" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/home.css">
+
+  <style>
+    :root {
+      --navy: #354F52;
+      --navy-dark: #2f3e46;
+      --gold: #B08D46;
+      --cream: #F0EDE3;
+      --white: #ffffff;
+      --muted: rgba(240, 237, 227, 0.72);
+      --border-gold: rgba(176, 141, 70, 0.28);
+      --glass: rgba(255, 255, 255, 0.055);
+
+      --line: rgba(53, 79, 82, 0.12);
+      --ink-muted: rgba(53, 79, 82, 0.55);
+      --cream-dim: rgba(240, 237, 227, 0.55);
+      --slate: #52796F;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Montserrat, sans-serif;
+      background: var(--navy-dark);
+      color: var(--cream);
+    }
+
+    .navbar {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(240, 237, 227, 0.98);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+      padding: 12px 0;
+      z-index: 1000;
+      transition: padding 0.3s ease;
+    }
+
+    .nav-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .navbar-left {
+      flex-shrink: 0;
+      position: relative;
+      height: 70px;
+      min-width: 220px;
+    }
+
+    .logo-link {
+      display: block;
+      height: 100%;
+      overflow: visible;
+    }
+
+    .logo-img {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 100px;
+      width: auto;
+      display: block;
+      max-width: 220px;
+    }
+
+    .logo-text .logo-main {
+      font-size: 20px;
+    }
+
+    .logo-text .logo-sub {
+      font-size: 10px;
+      letter-spacing: 3px;
+    }
+
+    .search-box {
+      flex: 1;
+      max-width: 400px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      padding: 0 12px;
+      height: 42px;
+    }
+
+    .search-input {
+      flex: 1;
+      border: none;
+      outline: none;
+      background: transparent;
+      font-size: 14px;
+      color: var(--navy);
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .search-input::placeholder { color: var(--ink-muted); }
+
+    .search-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--gold);
+      padding: 0 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: color 0.25s;
+    }
+
+    .search-btn:hover { color: var(--navy); }
+
+    .search-results {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: white;
+      border: 1px solid var(--line);
+      border-top: none;
+      border-radius: 0 0 4px 4px;
+      max-height: 400px;
+      overflow-y: auto;
+      margin-top: -1px;
+      z-index: 1001;
+      box-shadow: 0 8px 24px rgba(47, 62, 70, 0.12);
+    }
+
+    .search-result-item {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--cream-dim);
+      cursor: pointer;
+      transition: background 0.2s;
+      text-decoration: none;
+      display: block;
+      color: var(--navy);
+      font-size: 14px;
+    }
+
+    .search-result-item:hover { background: var(--cream-dim); }
+    .search-result-item:last-child { border-bottom: none; }
+
+    .nav-menu {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    .nav-menu a {
+      color: var(--slate);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      position: relative;
+      transition: color 0.25s;
+    }
+
+    .nav-menu a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 0;
+      height: 2px;
+      background: var(--gold);
+      transition: width 0.25s ease;
+    }
+
+    .nav-menu a:hover { color: var(--navy); }
+    .nav-menu a:hover::after { width: 100%; }
+
+    .contato-section {
+      position: relative;
+      min-height: 100vh;
+      padding: 150px 20px 70px;
+      background:
+        radial-gradient(circle at top left, rgba(176, 141, 70, 0.18), transparent 34%),
+        radial-gradient(circle at bottom right, rgba(176, 141, 70, 0.10), transparent 38%),
+        linear-gradient(135deg, #2f3e46 0%, #354F52 48%, #52796F 100%);
+      overflow: hidden;
+    }
+
+    .contato-section::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+      background-size: 42px 42px;
+      pointer-events: none;
+    }
+
+    .contato-container {
+      position: relative;
+      max-width: 1120px;
+      margin: 0 auto;
+      width: 100%;
+      z-index: 1;
+    }
+
+    .contato-header {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 54px;
+    }
+
+    .contato-header .eyebrow {
+      display: inline-block;
+      margin-bottom: 14px;
+      color: var(--gold);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .contato-header h1 {
+      font-size: clamp(36px, 5vw, 58px);
+      line-height: 1.05;
+      font-weight: 800;
+      margin: 0 0 18px;
+      color: var(--cream);
+    }
+
+    .contato-header p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: var(--muted);
+      margin: 0;
+      font-weight: 400;
+    }
+
+    .contato-content {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .info-box {
+      background: linear-gradient(180deg, rgba(255,255,255,0.075), rgba(255,255,255,0.035));
+      border: 1px solid var(--border-gold);
+      border-radius: 24px;
+      padding: 34px;
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.26);
+    }
+
+    .info-box h3 {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--cream);
+      margin: 0 0 28px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid rgba(176, 141, 70, 0.22);
+    }
+
+    .info-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      margin-bottom: 26px;
+    }
+
+    .info-item:last-child { margin-bottom: 0; }
+
+    .info-icon {
+      width: 46px;
+      height: 46px;
+      min-width: 46px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold);
+      background: rgba(176, 141, 70, 0.10);
+      border: 1px solid rgba(176, 141, 70, 0.34);
+    }
+
+    .info-icon svg {
+      width: 23px;
+      height: 23px;
+      stroke: currentColor;
+      stroke-width: 1.8;
+    }
+
+    .info-text label {
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 7px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .info-text p {
+      margin: 0;
+      color: var(--cream);
+      font-size: 16px;
+      line-height: 1.55;
+    }
+
+    .info-text a {
+      color: var(--cream);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .info-text a:hover { color: var(--gold); }
+
+    .form-group { margin-bottom: 18px; }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 9px;
+      color: var(--cream);
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 15px 16px;
+      border: 1px solid rgba(176, 141, 70, 0.32);
+      border-radius: 14px;
+      background: rgba(47, 62, 70, 0.38);
+      color: var(--cream);
+      font-family: Montserrat, sans-serif;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: rgba(240, 237, 227, 0.48);
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--gold);
+      background: rgba(47, 62, 70, 0.62);
+      box-shadow: 0 0 0 4px rgba(176, 141, 70, 0.10);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 130px;
+    }
+
+    .btn-enviar {
+      width: 100%;
+      padding: 16px 24px;
+      margin-top: 8px;
+      background: linear-gradient(135deg, #B08D46, #8F7136);
+      color: #2f3e46;
+      border: none;
+      border-radius: 999px;
+      font-size: 15px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-family: Montserrat, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .btn-enviar:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 35px rgba(176, 141, 70, 0.25);
+    }
+
+    .contato-extra {
+      margin-top: 28px;
+      padding: 22px;
+      border-radius: 18px;
+      background: rgba(176, 141, 70, 0.08);
+      border: 1px solid rgba(176, 141, 70, 0.20);
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .footer-legal {
+      margin-top: 28px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(176, 141, 70, 0.20);
+      font-size: 12px;
+      color: rgba(240, 237, 227, 0.75);
+      line-height: 1.7;
+    }
+
+    .footer-legal a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+
+    .footer-legal a:hover {
+      text-decoration: underline;
+    }
+
+    /* Ajuste específico LGPD */
+.checkbox-lgpd {
+  margin: 8px 0 0;
+}
+
+.checkbox-lgpd label {
+  display: flex !important;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  line-height: 1.45;
+  font-weight: 500;
+  color: var(--muted);
+  margin: 0;
+}
+
+.checkbox-lgpd input[type="checkbox"] {
+  width: 16px !important;
+  height: 16px !important;
+  min-width: 16px;
+  margin: 2px 0 0;
+  padding: 0 !important;
+  border: 1px solid rgba(176, 141, 70, 0.5);
+  border-radius: 4px;
+  accent-color: #B08D46;
+  background: rgba(47, 62, 70, 0.55);
+  box-shadow: none !important;
+  outline: none;
+  flex-shrink: 0;
+}
+
+.checkbox-lgpd a {
+  color: var(--gold);
+  text-decoration: underline;
+}
+
+.checkbox-lgpd a:hover {
+  opacity: 0.9;
+}
+
+    .whatsapp-float {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 999;
+      width: 64px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
+    }
+
+    .whatsapp-float:hover { transform: scale(1.07); }
+
+    .whatsapp-float img {
+      width: 64px;
+      height: 64px;
+      object-fit: contain;
+      display: block;
+    }
+
+    @media (max-width: 900px) {
+      .contato-content { grid-template-columns: 1fr; }
+      .contato-section { padding-top: 130px; }
+    }
+
+    @media (max-width: 768px) {
+      .contato-section { padding: 120px 16px 56px; }
+      .contato-header { margin-bottom: 36px; }
+      .contato-header p { font-size: 16px; }
+      .info-box { padding: 26px 22px; border-radius: 20px; }
+      .info-item { gap: 14px; }
+      .info-icon { width: 42px; height: 42px; min-width: 42px; }
+      .whatsapp-float, .whatsapp-float img { width: 58px; height: 58px; }
+
+      /* Mantem o navbar do contato idêntico ao padrão das outras páginas no mobile */
+      .navbar .search-box { display: none !important; }
+      .navbar .nav-menu { display: none !important; }
+      .navbar .btn-simule:not(.mobile-btn-simule) { display: none !important; }
+      .navbar .menu-toggle { display: flex !important; }
+
+      .navbar-left {
+        min-width: auto;
+        height: 62px;
+      }
+
+      .logo-img {
+        height: 86px;
+        max-width: 190px;
+      }
+
+      .mobile-menu { display: none; }
+      .mobile-menu.open { display: flex; }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="container nav-content">
+      <div class="navbar-left">
+        <a href="index.html" class="logo-link" aria-label="Maluf Imóveis">
+          <span class="logo-text">
+            <span class="logo-main">MALUF</span>
+            <span class="logo-sub">IMÓVEIS</span>
+          </span>
+        </a>
+      </div>
+
+      <button class="btn btn-simule" type="button" onclick="window.location.href='index.html#simulador'">
+        SIMULE O FINANCIAMENTO
+      </button>
+
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Encontre o seu empreendimento" class="search-input" aria-label="Buscar empreendimento">
+        <button class="search-btn" type="button" aria-label="Buscar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+          </svg>
+        </button>
+        <div class="search-results" id="searchResults" style="display: none;"></div>
+      </div>
+
+      <nav class="nav-menu" aria-label="Menu principal">
+        <a href="index.html">INÍCIO</a>
+        <a href="index.html#empreendimentos">EMPREENDIMENTOS</a>
+        <a href="contato.html" class="active">CONTATO</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <div class="mobile-search-box">
+        <input type="text" id="mobileSearchInput" placeholder="Encontre o seu empreendimento" class="search-input" aria-label="Encontre o seu empreendimento" autocomplete="off">
+        <button class="search-btn" type="button" aria-label="Buscar empreendimento">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+          </svg>
+        </button>
+        <div class="search-results mobile-search-results" id="mobileSearchResults" style="display: none;"></div>
+      </div>
+
+      <nav class="mobile-nav" aria-label="Menu mobile">
+        <a href="index.html" class="mobile-nav-link">INÍCIO</a>
+        <a href="index.html#empreendimentos" class="mobile-nav-link">EMPREENDIMENTOS</a>
+        <a href="contato.html" class="mobile-nav-link">CONTATO</a>
+      </nav>
+
+      <button class="btn btn-simule mobile-btn-simule" type="button" onclick="window.location.href='index.html#simulador'">
+        SIMULE O FINANCIAMENTO
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="contato-section">
+      <div class="contato-container">
+        <div class="contato-header">
+          <span class="eyebrow">Atendimento personalizado</span>
+          <h1>Entre em contato</h1>
+          <p>
+            Fale com a Maluf Imóveis para tirar dúvidas, receber tabela de preços,
+            simular financiamento ou conhecer os empreendimentos disponíveis.
+          </p>
+        </div>
+
+        <div class="contato-content">
+          <div class="info-box">
+            <h3>Informações de contato</h3>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/>
+                </svg>
+              </div>
+              <div class="info-text">
+                <label>WhatsApp</label>
+                <p>
+                  <a href="https://wa.me/5511941020630?text=Oi%2C%20vim%20pelo%20site%20Maluf%20Im%C3%B3veis%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer">
+                    (11) 94102-0630
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 11.19 19 19.5 19.5 0 0 1 5 12.81 19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.9.32 1.77.6 2.61a2 2 0 0 1-.45 2.11L8 9.65a16 16 0 0 0 6.35 6.35l1.21-1.21a2 2 0 0 1 2.11-.45c.84.28 1.71.48 2.61.6A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              <div class="info-text">
+                <label>Telefone</label>
+                <p><a href="tel:+5511941020630">(11) 94102-0630</a></p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <path d="m22 6-10 7L2 6"/>
+                </svg>
+              </div>
+              <div class="info-text">
+                <label>E-mail</label>
+                <p><a href="mailto:malufimoveis01@gmail.com">malufimoveis01@gmail.com</a></p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div class="info-text">
+                <label>Região de atendimento</label>
+                <p>São Paulo - SP</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M12 6v6l4 2"/>
+                </svg>
+              </div>
+              <div class="info-text">
+                <label>Horário de atendimento</label>
+                <p>Segunda a domingo<br>09:00 às 18:00</p>
+              </div>
+            </div>
+
+            <div class="contato-extra">
+              Atendimento rápido para quem deseja comprar apartamento, consultar condições,
+              verificar disponibilidade ou receber materiais dos empreendimentos.
+            </div>
+
+            <div class="footer-legal">
+              <p>Material preliminar sujeito a alteração sem aviso prévio. Imagens meramente ilustrativas.</p>
+              <p>Consulte disponibilidade das unidades, valores e condições comerciais no momento do atendimento.</p>
+              <p><a href="politica-de-privacidade.html">Política de Privacidade</a></p>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <h3>Envie uma mensagem</h3>
+
+            <form id="formContato">
+              <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" autocomplete="name" placeholder="Seu nome" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" autocomplete="email" placeholder="seu@email.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="celular">Celular / WhatsApp</label>
+                <input type="tel" id="celular" name="celular" autocomplete="tel" placeholder="(11) 99999-9999" required>
+              </div>
+
+              <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem..." required></textarea>
+              </div>
+
+              <div class="form-group checkbox-lgpd">
+  <label for="lgpd">
+    <input type="checkbox" id="lgpd" name="lgpd" required>
+    <span>Li e concordo com a <a href="politica-de-privacidade.html" target="_blank" rel="noopener noreferrer">Política de Privacidade</a>.</span>
+  </label>
+</div>
+
+              <button type="submit" class="btn-enviar">Enviar pelo WhatsApp</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="whatsapp-float" href="https://wa.me/5511941020630?text=Oi%2C%20vim%20pelo%20site%20Maluf%20Im%C3%B3veis%20e%20tenho%20interesse%20em%20um%20apartamento." target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp">
+    <img loading="lazy" decoding="async" src="assets/img/button-whats.webp" alt="Falar com Maluf Imóveis pelo WhatsApp">
+  </a>
+
+  <script src="assets/js/home.js" defer></script>
+
+  <script>
+    (function () {
+      var toggle = document.getElementById('menuToggle');
+      var menu = document.getElementById('mobileMenu');
+      if (!toggle || !menu) return;
+      toggle.addEventListener('click', function () {
+        var isOpen = menu.classList.toggle('open');
+        toggle.classList.toggle('open', isOpen);
+        toggle.setAttribute('aria-expanded', isOpen);
+        menu.setAttribute('aria-hidden', !isOpen);
+      });
+      menu.querySelectorAll('.mobile-nav-link').forEach(function (link) {
+        link.addEventListener('click', function () {
+          menu.classList.remove('open');
+          toggle.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+          menu.setAttribute('aria-hidden', 'true');
+        });
+      });
+    })();
+  </script>
+
+  <script>
+    const formContato = document.getElementById('formContato');
+
+    formContato.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const nome = this.nome.value.trim();
+      const email = this.email.value.trim();
+      const celular = this.celular.value.trim();
+      const mensagem = this.mensagem.value.trim();
+
+      if (!this.lgpd.checked) {
+        alert('Você precisa concordar com a Política de Privacidade para continuar.');
+        return;
+      }
+
+      const numeroWhatsApp = '5511941020630';
+
+      const textoWhatsApp =
+        `Oi, vim pelo site Maluf Imóveis!\n\n` +
+        `Nome: ${nome}\n` +
+        `E-mail: ${email}\n` +
+        `Celular: ${celular}\n` +
+        `Mensagem: ${mensagem}`;
+
+      const novaJanela = window.open(`https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(textoWhatsApp)}`, '_blank', 'noopener,noreferrer');
+      if (novaJanela) novaJanela.opener = null;
+      this.reset();
+    });
+  </script>
+</body>
+</html>

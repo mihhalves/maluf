@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Maluf Imóveis | Empreendimentos selecionados</title>
+
+  <meta name="description" content="Conheça os empreendimentos selecionados pela Maluf Imóveis e fale direto pelo WhatsApp.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#354F52">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="canonical" href="https://imoveismaluf.com.br/">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="any" type="image/x-icon">
+  <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/favicon-48x48.png" sizes="48x48" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Maluf Imóveis | Empreendimentos selecionados">
+  <meta property="og:description" content="Conheça os empreendimentos selecionados pela Maluf Imóveis e fale direto pelo WhatsApp.">
+  <meta property="og:url" content="https://imoveismaluf.com.br/">
+  <meta property="og:site_name" content="Maluf Imóveis">
+  <meta property="og:image" content="https://imoveismaluf.com.br/assets/img/hero.webp">
+  <meta property="og:image:alt" content="Empreendimentos selecionados pela Maluf Imóveis">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Maluf Imóveis | Empreendimentos selecionados">
+  <meta name="twitter:description" content="Conheça os empreendimentos selecionados pela Maluf Imóveis e fale direto pelo WhatsApp.">
+  <meta name="twitter:image" content="https://imoveismaluf.com.br/assets/img/hero.webp">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "@id": "https://imoveismaluf.com.br/#realestateagent",
+    "name": "Maluf Imóveis",
+    "url": "https://imoveismaluf.com.br/",
+    "image": "https://imoveismaluf.com.br/assets/img/hero.webp",
+    "telephone": "+55 11 94102-0630",
+    "email": "malufimoveis01@gmail.com",
+    "areaServed": {
+      "@type": "Place",
+      "name": "São Paulo, SP"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="assets/css/home.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="container nav-content">
+      <div class="navbar-left">
+        <a href="/" class="logo-link" aria-label="Página inicial Maluf Imóveis">
+          <span class="logo-text">
+            <span class="logo-main">MALUF</span>
+            <span class="logo-sub">IMÓVEIS</span>
+          </span>
+        </a>
+      </div>
+
+      <button class="btn btn-simule" type="button">
+        SIMULE O FINANCIAMENTO
+      </button>
+
+      <div class="search-box">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Encontre o seu empreendimento"
+          class="search-input"
+          aria-label="Encontre o seu empreendimento"
+          autocomplete="off"
+        >
+
+        <button class="search-btn" type="button" aria-label="Buscar empreendimento">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+          </svg>
+        </button>
+
+        <div class="search-results" id="searchResults" style="display: none;"></div>
+      </div>
+
+      <nav class="nav-menu" aria-label="Menu principal">
+        <a href="#empreendimentos">EMPREENDIMENTOS</a>
+        <a href="contato.html">CONTATO</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <div class="mobile-search-box">
+        <input
+          type="text"
+          id="mobileSearchInput"
+          placeholder="Encontre o seu empreendimento"
+          class="search-input"
+          aria-label="Encontre o seu empreendimento"
+          autocomplete="off"
+        >
+        <button class="search-btn" type="button" aria-label="Buscar empreendimento">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+          </svg>
+        </button>
+        <div class="search-results mobile-search-results" id="mobileSearchResults" style="display: none;"></div>
+      </div>
+
+      <nav class="mobile-nav" aria-label="Menu mobile">
+        <a href="#empreendimentos" class="mobile-nav-link">EMPREENDIMENTOS</a>
+        <a href="contato.html" class="mobile-nav-link">CONTATO</a>
+      </nav>
+
+      <button class="btn btn-simule mobile-btn-simule" type="button">
+        SIMULE O FINANCIAMENTO
+      </button>
+    </div>
+  </header>
+
+  <script>
+    (function () {
+      var toggle = document.getElementById('menuToggle');
+      var menu = document.getElementById('mobileMenu');
+      if (!toggle || !menu) return;
+      toggle.addEventListener('click', function () {
+        var isOpen = menu.classList.toggle('open');
+        toggle.classList.toggle('open', isOpen);
+        toggle.setAttribute('aria-expanded', isOpen);
+        menu.setAttribute('aria-hidden', !isOpen);
+      });
+      menu.querySelectorAll('.mobile-nav-link').forEach(function (link) {
+        link.addEventListener('click', function () {
+          menu.classList.remove('open');
+          toggle.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+          menu.setAttribute('aria-hidden', 'true');
+        });
+      });
+    })();
+  </script>
+
+  <main>
+    <section class="hero-banner">
+      <div class="hero-banner-mosaic" aria-hidden="true">
+        <span class="hero-banner-tile" style="background-image: url('assets/img/empreendimentos/marka-perdizes.webp')"></span>
+        <span class="hero-banner-tile" style="background-image: url('assets/img/empreendimentos/gaya-vila-romana.webp')"></span>
+        <span class="hero-banner-tile" style="background-image: url('assets/img/empreendimentos/natal-spot.webp')"></span>
+        <span class="hero-banner-tile" style="background-image: url('assets/img/empreendimentos/caragua-spot.webp')"></span>
+        <span class="hero-banner-tile" style="background-image: url('assets/img/empreendimentos/itacare-spot.webp')"></span>
+      </div>
+      <div class="hero-banner-overlay"></div>
+
+      <div class="hero-banner-logo">
+        <span class="hero-banner-eyebrow">Portfólio de empreendimentos</span>
+        <span class="hero-banner-line"></span>
+        <span class="hero-banner-main">MALUF</span>
+        <span class="hero-banner-sub">20 ANOS DE MERCADO</span>
+        <span class="hero-banner-line"></span>
+      </div>
+    </section>
+
+    <section class="hero">
+      <div class="hero-left">
+        <img
+          class="hero-promo-totem"
+          src="assets/img/totem-sesc-pompeia.png"
+          alt="Totem luminoso SESC-Pompeia"
+          loading="lazy"
+          decoding="async"
+        >
+
+        <div class="hero-left-inner">
+          <span class="promo-badge">
+            <strong>Ativo imobiliário</strong>
+            R2V na Pompéia
+          </span>
+
+          <span class="eyebrow">Breve lançamento</span>
+          <h1>More a 600m da Estação <em>Sesc Pompeia</em></h1>
+
+          <div class="promo-price">
+            <span class="promo-price-label">A partir de</span>
+            <strong class="promo-price-value">R$ 10.000,00 por M² à vista</strong>
+            <span class="promo-price-note">Condição válida somente para as 20 primeiras unidades.</span>
+          </div>
+
+          <a
+            href="https://wa.me/5511941020630?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20R2V%20na%20Pomp%C3%A9ia"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn"
+            data-whatsapp-title="R2V na Pompéia"
+          >
+            Ver empreendimento
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="form-box">
+          <h4>Faça sua simulação gratuita</h4>
+          <p class="form-sub">Preencha os dados abaixo.</p>
+
+          <form class="form-rodrigo" id="formRodrigo">
+            <input
+              type="text"
+              name="nome"
+              placeholder="Qual é o seu nome completo?"
+              aria-label="Qual é o seu nome completo?"
+              autocomplete="name"
+              required
+            >
+
+            <input
+              type="tel"
+              name="celular"
+              placeholder="(11) 99999-9999"
+              aria-label="Celular"
+              autocomplete="tel"
+              inputmode="tel"
+              required
+            >
+
+            <input
+              type="email"
+              name="email"
+              placeholder="Seu e-mail?"
+              aria-label="Seu e-mail"
+              autocomplete="email"
+              required
+            >
+
+            <label style="display:flex;gap:8px;align-items:flex-start;font-size:13px;line-height:1.5;margin-bottom:12px;">
+              <input type="checkbox" name="lgpd" required style="margin-top:3px;flex-shrink:0;">
+              <span>Li e concordo com a <a href="/politica-de-privacidade.html" target="_blank" rel="noopener noreferrer">Política de Privacidade</a></span>
+            </label>
+
+            <button type="submit">Enviar para WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="empreendimentos" id="empreendimentos">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Portfólio</span>
+            <h2>Nossos Empreendimentos</h2>
+          </div>
+
+          <p>Navegue pelas páginas abaixo para conhecer cada um dos nossos empreendimentos em detalhe.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <img
+              class="card-img"
+              src="assets/img/empreendimentos/marka-perdizes.webp"
+              alt="Marka Perdizes"
+              loading="lazy"
+              decoding="async"
+            >
+
+            <div class="card-body">
+              <h3>Marka Perdizes</h3>
+              <p>Conheça o Marka Perdizes no site oficial do empreendimento.</p>
+              <a href="https://www.markaperdizes.com.br/" class="btn" target="_blank" rel="noopener noreferrer">Visitar site</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              class="card-img"
+              src="assets/img/empreendimentos/gaya-vila-romana.webp"
+              alt="Gaya Vila Romana"
+              loading="lazy"
+              decoding="async"
+            >
+
+            <div class="card-body">
+              <h3>Gaya Vila Romana</h3>
+              <p>Conheça o Gaya Vila Romana no site oficial do empreendimento.</p>
+              <a href="https://www.gayavilaromana.com.br/" class="btn" target="_blank" rel="noopener noreferrer">Visitar site</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              class="card-img"
+              src="assets/img/empreendimentos/natal-spot.webp"
+              alt="Natal Spot"
+              loading="lazy"
+              decoding="async"
+            >
+
+            <div class="card-body">
+              <h3>Natal Spot</h3>
+              <p>Conheça o Natal Spot no site oficial do empreendimento.</p>
+              <a href="https://natalspot.com.br/" class="btn" target="_blank" rel="noopener noreferrer">Visitar site</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              class="card-img"
+              src="assets/img/empreendimentos/caragua-spot.webp"
+              alt="Caraguá Spot"
+              loading="lazy"
+              decoding="async"
+            >
+
+            <div class="card-body">
+              <h3>Caraguá Spot</h3>
+              <p>Conheça o Caraguá Spot no site oficial do empreendimento.</p>
+              <a href="https://caraguaspot.com.br/" class="btn" target="_blank" rel="noopener noreferrer">Visitar site</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              class="card-img"
+              src="assets/img/empreendimentos/itacare-spot.webp"
+              alt="Itacaré Spot"
+              loading="lazy"
+              decoding="async"
+            >
+
+            <div class="card-body">
+              <h3>Itacaré Spot</h3>
+              <p>Conheça o Itacaré Spot no site oficial do empreendimento.</p>
+              <a href="https://itacarespot.com.br/" class="btn" target="_blank" rel="noopener noreferrer">Visitar site</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="cta-inner">
+        <h2>Vamos conversar?</h2>
+        <p>Entre em contato e encontre o imóvel ideal para você.</p>
+
+        <a
+          href="https://wa.me/5511941020630?text=Oi%2C%20vim%20pelo%20site%20Maluf%20Im%C3%B3veis"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn"
+        >
+          Fale conosco
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Maluf Imóveis. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/5511941020630?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20seu%20im%C3%B3vel"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Falar no WhatsApp"
+  >
+    <img loading="lazy" decoding="async" src="assets/img/button-whats.webp" alt="WhatsApp">
+  </a>
+
+  <script src="assets/js/home.js" defer></script>
+</body>
+</html>
